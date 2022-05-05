@@ -42,7 +42,19 @@ public class AppTest
     /*
         构造方法参数下标注入
      */
+    @Test
+    public void TestApp03(){
+        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Student02 student02 =(Student02) ac.getBean("student03");
+        System.out.println(student02);
+    }
     /*
         构造方法参数默认顺序注入
      */
+    @Test
+    public void TestApp04(){
+        ApplicationContext ac = new ClassPathXmlApplicationContext("applicationContext.xml");
+        Student02 student02 =(Student02) ac.getBean("student03");
+        System.out.println(student02);
+    }
 }

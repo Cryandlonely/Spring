@@ -21,12 +21,23 @@
         <property name="id" value="789"></property>
         <property name="school" ref="school"></property>
     </bean>
-    <!--使用构造方法参数名称注入-->
+    <!--使用构造方法参数名称注入(顺序可以颠倒)-->
     <bean id="student02" class="org.example.domain.Student02">
         <constructor-arg name="name" value="张三"></constructor-arg>
         <constructor-arg name="id" value="666"></constructor-arg>
         <constructor-arg name="school" ref="school"></constructor-arg>
     </bean>
-    <!--使用构造方法参数下标注入-->
-    <!--使用构造方法参数默认顺序注入-->
+    <!--使用构造方法参数下标注入(顺序可以颠倒)-->
+    <bean id="student03" class="org.example.domain.Student02">
+        <constructor-arg index="0" value="张三"></constructor-arg>
+        <constructor-arg index="1" value="666"></constructor-arg>
+        <constructor-arg index="2" ref="school"></constructor-arg>
+    </bean>
+    <!--使用构造方法参数默认顺序注入(顺序不能颠倒)-->
+    <bean id="student04" class="org.example.domain.Student02">
+        <constructor-arg value="张三"></constructor-arg>
+        <constructor-arg value="666"></constructor-arg>
+        <constructor-arg ref="school"></constructor-arg>
+    </bean>
+
 </beans>

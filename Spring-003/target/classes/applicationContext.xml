@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--创建dao层对象-->
+    <bean id="dao" class="org.example.dao.Impl.studentDaoImpl"></bean>
+    <!--创建service对象-->
+    <bean id="service" class="org.example.service.Impl.studentServiceImpl">
+        <property name="studentDao" ref="dao"></property>
+    </bean>
+    <!--创建controller对象-->
+    <bean id="controller" class="org.example.controller.studentController">
+        <property name="studentService" ref="service"></property>
+    </bean>
+</beans>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--
+        任何类型注入条件：
+                      需要创建的类中必须有set方法与无参构造方法(也可不写，默认存在)
+    -->
+    <!--简单类型注入-->
+    <bean id="student" class="org.example.domain.Student">
+        <property name="name" value="li"></property>
+        <property name="id" value="123"></property>
+    </bean>
+    <bean id="school" class="org.example.domain.School">
+        <property name="name" value="li"></property>
+        <property name="address" value="hebei"></property>
+    </bean>
+    <!--引用类型注入-->
+    <bean id="student01" class="org.example.domain.Student01">
+        <property name="name" value="zhang"></property>
+        <property name="id" value="789"></property>
+        <property name="school" ref="school"></property>
+    </bean>
+</beans>

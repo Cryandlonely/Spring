@@ -1,18 +1,19 @@
-package org.example.domain;
+package org.example.example01;
 
-public class Student01 {
+public class Student {
     private String name;
     private String id;
-    private School school;
 
     @Override
     public String toString() {
-        return "Studnet01{" +
+        return "Student{" +
                 "name='" + name + '\'' +
                 ", id='" + id + '\'' +
-                ", school=" + school +
                 '}';
     }
+
+    /*public Student() {
+    }*/
 
     public void setName(String name) {
         this.name = name;
@@ -21,11 +22,4 @@ public class Student01 {
     public void setId(String id) {
         this.id = id;
     }
-
-    public void setSchool(School school) {
-        this.school = school;
-    }
-
-    /*public Student01() {
-    }*/
 }

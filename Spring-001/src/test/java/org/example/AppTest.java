@@ -2,10 +2,9 @@ package org.example;
 
 import static org.junit.Assert.assertTrue;
 
-import org.example.domain.School;
-import org.example.domain.Student;
-import org.example.domain.Student01;
-import org.example.domain.Student02;
+import org.example.example01.Student;
+import org.example.example01.Student01;
+import org.example.example01.Student02;
 import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;

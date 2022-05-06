@@ -1,4 +1,4 @@
-package org.example.domain;
+package org.example.example01;
 
 public class School {
     private String name;

@@ -8,8 +8,9 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Spring-002" />
         <module name="Spring-003" />
+        <module name="Spring-aspectj-006" />
         <module name="Spring-001" />
-        <module name="Spring-004" />
+        <module name="Spring-005" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -17,6 +18,9 @@
       <module name="Spring-002" target="1.8" />
       <module name="Spring-003" target="1.8" />
       <module name="Spring-004" target="1.8" />
+      <module name="Spring-005" target="1.8" />
+      <module name="Spring-Aop框架-001" target="1.7" />
+      <module name="Spring-aspectj-006" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

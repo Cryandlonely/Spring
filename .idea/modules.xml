@@ -6,6 +6,8 @@
       <module fileurl="file://$PROJECT_DIR$/Spring-002/Spring-002.iml" filepath="$PROJECT_DIR$/Spring-002/Spring-002.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-003/Spring-003.iml" filepath="$PROJECT_DIR$/Spring-003/Spring-003.iml" />
       <module fileurl="file://$PROJECT_DIR$/Spring-004/Spring-004.iml" filepath="$PROJECT_DIR$/Spring-004/Spring-004.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-005/Spring-005.iml" filepath="$PROJECT_DIR$/Spring-005/Spring-005.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Spring-aspectj-006/Spring-aspectj-006.iml" filepath="$PROJECT_DIR$/Spring-aspectj-006/Spring-aspectj-006.iml" />
     </modules>
   </component>
 </project>

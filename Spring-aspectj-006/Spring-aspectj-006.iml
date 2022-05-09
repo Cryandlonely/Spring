@@ -10,6 +10,9 @@
         <fileset id="fileset2" name="ApplicationContext (2)" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/ac01/applicationContext.xml</file>
         </fileset>
+        <fileset id="fileset3" name="ApplicationContext (3)" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/ac03/applicationContext.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>

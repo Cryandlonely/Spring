@@ -1,9 +1,9 @@
 package org.example.dao.Impl;
 
 import org.example.dao.studentDao;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Repository;
 
-@Component
+@Repository
 public class studentDaoImpl implements studentDao {
     @Override
     public String getName(String name) {

@@ -1,9 +1,15 @@
 package org.example.as01;
 
+import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
+import org.springframework.stereotype.Component;
+
+import java.lang.reflect.Array;
+import java.util.Arrays;
 
 @Aspect
+@Component
 public class aspectJ {
 
     /*
@@ -27,7 +33,14 @@ public class aspectJ {
      */
 
     @Before(value = "execution(public String org.example.as01.someService.doSome(String,int))")
-    public void myBefore(){
+    /*
+        public void myBefore(){
+            System.out.println("切面方法实现。。。。。。。");
+        }
+    */
+    public void myBefore(JoinPoint joinPoint){
         System.out.println("切面方法实现。。。。。。。");
+        System.out.println("目标方法的签名："+joinPoint.getSignature());
+        System.out.println("目标方法的参数："+ Arrays.toString(joinPoint.getArgs()));
     }
 }

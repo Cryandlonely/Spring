@@ -2,9 +2,9 @@ package org.example.controller;
 
 import org.example.Service.studentService;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
-@Component
+@Controller
 public class studentController {
     @Autowired
     studentService studentService;

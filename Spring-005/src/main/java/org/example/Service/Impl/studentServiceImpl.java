@@ -1,12 +1,11 @@
 package org.example.Service.Impl;
 
 import org.example.Service.studentService;
-import org.example.dao.Impl.studentDaoImpl;
 import org.example.dao.studentDao;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-@Component
+@Service
 public class studentServiceImpl implements studentService {
     @Autowired
     studentDao studentDao;

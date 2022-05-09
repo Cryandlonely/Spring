@@ -5,6 +5,10 @@
       <configuration>
         <fileset id="fileset" name="ApplicationContext" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/applicationContext.xml</file>
+          <file>file://$MODULE_DIR$/src/main/resources/ac02/applicationContext.xml</file>
+        </fileset>
+        <fileset id="fileset2" name="ApplicationContext (2)" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/ac01/applicationContext.xml</file>
         </fileset>
       </configuration>
     </facet>

@@ -13,6 +13,9 @@
         <fileset id="fileset3" name="ApplicationContext (3)" removed="false">
           <file>file://$MODULE_DIR$/src/main/resources/ac03/applicationContext.xml</file>
         </fileset>
+        <fileset id="fileset4" name="ApplicationContext (4)" removed="false">
+          <file>file://$MODULE_DIR$/src/main/resources/ac04/applicationContext.xml</file>
+        </fileset>
       </configuration>
     </facet>
   </component>
